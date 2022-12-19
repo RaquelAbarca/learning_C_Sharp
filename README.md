@@ -1,6 +1,12 @@
 # learning_C_Sharp
-A repo where I will show you my project mean while I learn this new languaje
+This is a repo where I will show you my practices while I learn this new languaje.
 
-For learn, i will use Sololearn, you can look at the course in this link:
+For learn C#, i will use Sololearn, you can look at the course in this link:
 
-https://www.sololearn.com/learn/courses/c-sharp-introduction
+Basic/Introduction: https://www.sololearn.com/learn/courses/c-sharp-introduction
+
+Intermediate: https://www.sololearn.com/learn/courses/c-sharp-intermediate
+
+## Certificates:
+### Introduction
+![341f21b6-4879-4c1c-8353-46110131ab61](https://user-images.githubusercontent.com/110420288/208159176-84fa0823-8cbf-43d8-a572-9b375e8ef286.jpg)

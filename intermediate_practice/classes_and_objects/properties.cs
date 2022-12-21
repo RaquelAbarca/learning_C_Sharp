@@ -28,3 +28,14 @@ value is a special keyword, which represents the value we assign to a property u
 
 The name of the property can be anything you want, but coding conventions dictate properties have the same name as the private field with a capital letter.
 */
+
+
+
+/*
+Auto-Implemented Properties
+C# provides a fast and effective mechanism for declaring private members through their properties.
+
+For example, to create a private member that can only be accessed through the Name property's get and set accessors, use the following syntax: 
+
+public string Name { get; set; }
+*/

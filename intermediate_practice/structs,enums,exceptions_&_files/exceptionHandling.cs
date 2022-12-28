@@ -41,3 +41,53 @@ catch(Exception e) {
   Console.WriteLine(e.Message);
 }
 // Index was outside the bounds of the array.
+
+/*
+Handling Multiple Exceptions 
+A single try block can contain multiple catch blocks that handle different exceptions separately. 
+
+Exception handling is particularly useful when dealing with user input.
+
+For example, for a program that requests user input of two numbers and then outputs their quotient, be sure that you handle division by zero, in case your user enters 0 as the second number. 
+*/
+int x, y;
+try {
+  x = Convert.ToInt32(Console.Read());
+  y = Convert.ToInt32(Console.Read());
+  Console.WriteLine(x / y);
+}
+catch (DivideByZeroException e) {
+  Console.WriteLine("Cannot divide by 0");
+}
+catch(Exception e) {
+  Console.WriteLine("An error occurred");
+}
+
+/*
+The above code handles the DivideByZeroException separately. The last catch handles all the other exceptions that might occur. If multiple exceptions are handled, the Exception type must be defined last.
+
+Now, if the user enters 0 for the second number, "Cannot divide by 0" will be displayed.
+
+If, for example, the user enters non-integer values, "An error occurred" will be displayed.
+
+The following exception types are some of the most commonly used: FileNotFoundException, FormatException, IndexOutOfRangeException, InvalidOperationException, OutOfMemoryException.
+*/
+
+//finally 
+//An optional finally block can be used after the catch blocks. The finally block is used to execute a given set of statements, whether an exception is thrown or not. 
+//For example: 
+
+int result=0;
+int num1 = 8;
+int num2 = 4;
+try {
+  result = num1 / num2;
+}
+catch (DivideByZeroException e) {
+  Console.WriteLine("Error");
+}
+finally {
+  Console.WriteLine(result);
+}
+
+//The finally block can be used, for example, when you work with files or other resources. These should be closed or released in the finally block, whether an exception is raised or not.
